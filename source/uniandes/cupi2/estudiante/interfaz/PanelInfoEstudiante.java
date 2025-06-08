@@ -56,6 +56,11 @@ public class PanelInfoEstudiante extends JPanel
      * Etiqueta para la imagen.
      */
     private JLabel lblImagen;
+    
+    /**
+	 * Etiqueta Semestre.
+	 */
+    private JLabel lblSemestre;
 
     /**
      * Campo de texto donde se muestra el promedio.
@@ -76,6 +81,11 @@ public class PanelInfoEstudiante extends JPanel
      * Campo de texto donde se muestra el apellido.
      */
     private JTextField txtApellido;
+    
+    /**
+     * Campo de texto donde se muestra el semestre.	
+     */
+    private JTextField txtSemestre;
 
     // -----------------------------------------------------------------
     // Constructores
@@ -89,7 +99,7 @@ public class PanelInfoEstudiante extends JPanel
         setLayout( new BorderLayout( ) );
 
         JPanel panelAux = new JPanel( );
-        panelAux.setLayout( new GridLayout( 4, 2 ) );
+        panelAux.setLayout( new GridLayout( 5, 2 ) );
         txtCodigo = new JTextField( );
         txtCodigo.setEditable( false );
         txtPromedio = new JTextField( );
@@ -102,6 +112,10 @@ public class PanelInfoEstudiante extends JPanel
         lblCodigo = new JLabel( );
         lblNombre = new JLabel( );
         lblApellido = new JLabel( );
+        lblSemestre = new JLabel("Semestre:");
+        txtSemestre = new JTextField();
+        txtSemestre.setEditable(false);
+              
 
         lblPromedio.setText( "Promedio:" );
         lblCodigo.setText( "Código:" );
@@ -113,9 +127,11 @@ public class PanelInfoEstudiante extends JPanel
         panelAux.add( txtNombre );
         panelAux.add( lblApellido );
         panelAux.add( txtApellido );
+        panelAux.add(lblSemestre);
+        panelAux.add(txtSemestre);  
         panelAux.add( lblPromedio );
         panelAux.add( txtPromedio );
-
+        
         lblImagen = new JLabel( );
         ImageIcon icono = new ImageIcon( "./data/estudiante.png" );
         lblImagen.setIcon( icono );
@@ -146,6 +162,7 @@ public class PanelInfoEstudiante extends JPanel
         txtCodigo.setText( pEstudiante.darCodigo( ) + "" );
         txtNombre.setText( pEstudiante.darNombre( ) );
         txtApellido.setText( pEstudiante.darApellido( ) );
+        txtSemestre.setText(pEstudiante.darSemestre() + "");
     }
 
 }
