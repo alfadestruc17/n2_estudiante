@@ -34,7 +34,7 @@ public class Estudiante
     // -----------------------------------------------------------------
     // Atributos
     // -----------------------------------------------------------------
-
+    
     /**
      * Código del estudiante.
      */
@@ -53,6 +53,10 @@ public class Estudiante
     /**
      * Curso 1 del estudiante.
      */
+    private int semestre;
+    /**
+	 * semestre del estudiante.
+	 */
     private Curso curso1;
 
     /**
@@ -89,6 +93,7 @@ public class Estudiante
         nombre = "Samuel Rene";
         apellido = "Yepes Rivera";
         codigo = 1029142202;
+        semestre = 3;
         curso1 = new Curso( "ISIS1204", "APO1", 3, Departamento.SISTEMAS );
         curso2 = new Curso( "MATE1203", "Cálculo diferencial", 3, Departamento.MATEMATICAS );
         curso3 = new Curso( "FISI1100", "Física 1", 4, Departamento.FISICA );
@@ -125,7 +130,29 @@ public class Estudiante
     {
         return apellido;
     }
-
+    /**
+	 * Retorna el semestre del estudiante.
+	 * @return Semestre del estudiante.
+	 */
+    public int darSemestre( )
+    {
+		return semestre;
+	}
+    /**
+     * Cambia el semestre del estudiante. <br>
+     * @param pSemestre Semestre del estudiante. pSemestre > 0.	
+     */
+    public void setSemestre( int pSemestre )
+	{
+    	if ( pSemestre > 0 )
+		{
+			semestre = pSemestre;
+		}
+		else
+		{
+			throw new IllegalArgumentException( "El semestre debe ser mayor a 0." );
+		}
+	}
     /**
      * Retorna el curso 1 del estudiante.
      * @return Curso 1 del estudiante.
