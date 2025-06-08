@@ -272,7 +272,7 @@ public class InterfazEstudiante extends JFrame
     {
         String respuesta = estudiante.metodo1( );
         actualizar( );
-        JOptionPane.showMessageDialog( this, respuesta, "Respuesta", JOptionPane.INFORMATION_MESSAGE );
+        JOptionPane.showMessageDialog( this, respuesta, "Salario del Estudiante", JOptionPane.INFORMATION_MESSAGE );
     }
 
     /**
