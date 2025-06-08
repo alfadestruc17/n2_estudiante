@@ -348,7 +348,8 @@ public class Estudiante
         return asigno;
     }
     /**
-     * 
+     * Método para calcular el salario del estudiante. <br>
+     * @return Retorna el salario del calculado en pesos. <br>
      */
     public int calcularSalario() {
     	int salario = 0;
