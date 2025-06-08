@@ -127,11 +127,11 @@ public class PanelInfoEstudiante extends JPanel
         panelAux.add( txtNombre );
         panelAux.add( lblApellido );
         panelAux.add( txtApellido );
-        panelAux.add( lblPromedio );
-        panelAux.add( txtPromedio );
         panelAux.add(lblSemestre);
         panelAux.add(txtSemestre);  
-
+        panelAux.add( lblPromedio );
+        panelAux.add( txtPromedio );
+        
         lblImagen = new JLabel( );
         ImageIcon icono = new ImageIcon( "./data/estudiante.png" );
         lblImagen.setIcon( icono );
