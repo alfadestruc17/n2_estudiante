@@ -395,7 +395,7 @@ public class Estudiante
     public String metodo1( )
     {
     	int salario = calcularSalario();
-        return "El salario del estudiante es: " + salario + " Pesos";
+        return "El salario del estudiante es de: " + salario + " Pesos";
     }
 
     /**
