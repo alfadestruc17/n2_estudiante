@@ -386,7 +386,8 @@ public class Estudiante
 		return salario;
     }
     /**
-     * 
+     * Calcula la mejor nota del estudiante. <br>
+     * @return Retorna la mejor nota del estudiante. Si no tiene ninguna nota asignada, retorna -1. <br>
      */
     public double MejorNota() {
     	double MejorNota = -1;
