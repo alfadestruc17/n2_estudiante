@@ -81,7 +81,7 @@ public class Estudiante
     /**
      * Crea un nuevo estudiante con los valores dados por parámetro. <br>
      * <b>post: </b> El estudiante fue inicializado con los siguientes valores: <br>
-     * Nombre: Samuel Rene, Apellido: Yepes Rivera, Código: 201612345. <br>
+     * Nombre: Samuel Rene, Apellido: Yepes Rivera, Código: 1029142202. <br>
      * Los cursos del estudiante fueron inicializados con los siguientes valores: <br>
      * Curso 1 - Código: ISIS1204, Nombre: APO1, Créditos: 3, Departamento: SISTEMAS. <br>
      * Curso 2 - Código: MATE1203, Nombre: Cálculo diferencial, Créditos: 3, Departamento: MATEMÁTICAS. <br>
