@@ -11,7 +11,6 @@
 package uniandes.cupi2.estudiante.interfaz;
 
 import java.awt.BorderLayout;
-import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -25,7 +24,6 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 
-import uniandes.cupi2.estudiante.mundo.Curso;
 import uniandes.cupi2.estudiante.mundo.Curso.Departamento;
 
 /**

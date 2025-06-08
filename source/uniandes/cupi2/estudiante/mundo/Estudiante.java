@@ -86,9 +86,9 @@ public class Estudiante
      */
     public Estudiante( )
     {
-        nombre = "Juliana";
-        apellido = "Ramírez";
-        codigo = 201612345;
+        nombre = "Samuel Rene";
+        apellido = "Yepes Rivera";
+        codigo = 1029142202;
         curso1 = new Curso( "ISIS1204", "APO1", 3, Departamento.SISTEMAS );
         curso2 = new Curso( "MATE1203", "Cálculo diferencial", 3, Departamento.MATEMATICAS );
         curso3 = new Curso( "FISI1100", "Física 1", 4, Departamento.FISICA );
