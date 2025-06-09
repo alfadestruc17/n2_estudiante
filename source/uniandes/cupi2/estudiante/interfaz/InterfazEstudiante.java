@@ -282,7 +282,7 @@ public class InterfazEstudiante extends JFrame
     {
         String respuesta = estudiante.metodo2( );
         actualizar( );
-        JOptionPane.showMessageDialog( this, respuesta, "Respuesta", JOptionPane.INFORMATION_MESSAGE );
+        JOptionPane.showMessageDialog( this, respuesta, "Mejor nota del Estudiante", JOptionPane.INFORMATION_MESSAGE );
     }
 
     // -----------------------------------------------------------------

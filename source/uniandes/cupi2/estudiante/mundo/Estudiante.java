@@ -441,6 +441,14 @@ public class Estudiante
      */
     public String metodo2( )
     {
-        return "Respuesta 2";
+        double mejor = MejorNota();
+        if (mejor == -1)
+		{
+			return "El estudiante no tiene ninguna nota asignada.";
+		}
+		else
+		{
+			return "La mejor nota del estudiante es: " + mejor;
+		}
     }
 }
